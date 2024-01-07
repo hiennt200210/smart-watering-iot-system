@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../configs/connectDb");
+const sequelize = require("../configs/database");
 
 const Moisture = sequelize.define("Moisture", {
   deviceId: {

@@ -1,4 +1,5 @@
-const sequelize = require("../configs/connectDb");
+const sequelize = require("../configs/database");
+const Moisture = require("./moisture");
 
 (async () => {
   await sequelize.sync({ alter: true });
