@@ -9,10 +9,11 @@ const sequelize = new Sequelize("swsdb", "root", "19181988", {
 sequelize
     .authenticate()
     .then(() => {
-        console.log("Connection has been established successfully.");
+        console.log("Đã kết nối với database!");
     })
     .catch((error) => {
-        console.error("Unable to connect to the database: ", error);
+        console.log("Không thể kết nối với database!");
+        console.log(error);
     });
 
 module.exports = sequelize;
